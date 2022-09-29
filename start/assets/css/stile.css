@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* IMPOSTAZIONI GENERALI */
+html, body {
+    background-image: url('/assets/img/sfondo.png');
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    background-attachment: fixed;
+    background-size:auto;
+    font-size: 0.98em;
+    line-height: 1.5em;
+   
+}
+
+a:link, a:visited {
+    font-weight: bold;
+    color: #28aed2;
+    text-decoration: underline;
+}
+
+ a:hover {
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* HEADER */
+header {
+    background-image: linear-gradient(to bottom, #01aacd, #0098bc, #0087ab, #007699, #006688);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 3px 4px 2px rgba(115,115,115,1);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+ /*paragrafo header = Epicode - Il blog dei developers*/
+header div p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+
+
+ /*UL all'interno del Nav*/
+
+header nav ul {
+    margin-top: 20px;
+    font-size: 0.9rem; 
+ }
+
+/*dimensione paragrafi li ed eliminazione dei dotted lista*/
+
+nav ul li {
+   list-style-type: none;
+   line-height: 1.8em;
+   
+}
+
+/*Inserimento delle frecce prima e dopo nel menu lista li*/
+
+nav ul li::before {
+    content: "\21D2"; 
+}
+
+nav ul li::after {
+    content: "\21D0";
+}
+
+/* link contenuti all'interno del nav*/
+
+header nav ul a:link, a:visited {
+    font-weight: bold;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+header nav ul a:hover {
+    font-weight: bold;
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+main {
+    background-color: #fff;
+    box-shadow: 0px 3px 4px 2px rgba(115,115,115,1);
+    padding: 30px 10px;
+}
+
+hr {
+    display: none;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+
+/* colora di grigio solo il p subito dopo h1*/
+main {
+    margin-bottom: 20px;
+}
+
+main article h1 + p {
+    color: #aaaaaa;   
+}
+
+main article h1 {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+    font-size: 1.7em;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+strong {
+    color:#aa2072;
+    font-weight:600;
+}
+
+main article ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    
+}
+
+main article ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+code {
+    background-color: #dddddd;
+    border: 1px solid #908e8f;
+    border-radius: 6px;
+
+}
+
+/* TABELLE */
+
+caption {
+    font-weight: 600;
+    font-style: italic;
+}
+
+table {
+    width: 280px;
+    text-align: center;
+    border-bottom: 2px solid #3366cc;
+    margin-bottom: 20px;
+
+}
+
+thead {
+    background-color: #3366cc;
+    color: #fff;
+}
+
+
+th {
+    padding:10px;
+    border-right: 1px solid #fff ;
+}
+
+
+tr:nth-child(even) {
+    background-color: #ececec;
+    border-top: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+
+}
+
+td {
+    padding: 10px;
+}
+
+
+
+/* FORM */
+
+h2 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 10px;
+    width: 290px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #dadada;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-bottom: 1px dashed black;
+}
+
+input:focus {
+    border: 1px solid black;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+aside div {
+    background-color: #dadada;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+
+aside div a + p {
+    font-weight: bold;
+}
+
+.date {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: linear-gradient(to bottom, #005566, #194c5b, #234350, #283b44, #2a3338);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+address a:link, a:visited {
+    font-weight: bold;
+    color: #d511fe;
+    text-decoration: underline;
+
+}
