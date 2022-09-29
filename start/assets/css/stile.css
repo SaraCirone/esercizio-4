@@ -3,9 +3,9 @@
 
 /* IMPOSTAZIONI GENERALI */
 html, body {
-    background-image: url('/assets/img/sfondo.png');
+    background-image: url('../img/sfondo.png');
     font-family: 'Poppins', sans-serif;
-    margin: 10px;
+    padding: 10px;
     background-attachment: fixed;
     background-size:auto;
     font-size: 0.98em;
@@ -13,7 +13,13 @@ html, body {
    
 }
 
-a:link, a:visited {
+a:link {
+    font-weight: bold;
+    color: #28aed2;
+    text-decoration: underline;
+}
+
+a:visited {
     font-weight: bold;
     color: #28aed2;
     text-decoration: underline;
@@ -73,9 +79,15 @@ nav ul li::after {
 
 /* link contenuti all'interno del nav*/
 
-header nav ul a:link, a:visited {
+header nav ul a:link {
     font-weight: bold;
-    color: #fff !important;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul a:visited {
+    font-weight: bold;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -154,7 +166,7 @@ caption {
 }
 
 table {
-    width: 280px;
+    width: 100%;
     text-align: center;
     border-bottom: 2px solid #3366cc;
     margin-bottom: 20px;
@@ -170,6 +182,7 @@ thead {
 th {
     padding:10px;
     border-right: 1px solid #fff ;
+    vertical-align: bottom;
 }
 
 
@@ -197,7 +210,7 @@ h2 {
 
 iframe {
     border-radius: 10px;
-    width: 290px;
+    width: 100%;
     height: 150px;
     margin-bottom: 20px;
 }
@@ -222,6 +235,13 @@ input:focus {
     border: 1px solid black;
 }
 
+button {
+    background-color: #3366cc;
+    border: none;
+    color: white;
+    padding: 3px;
+}
+
 /* ELEMENTI NELL' ASIDE */
 
 aside div {
@@ -237,7 +257,7 @@ aside div a + p {
     font-weight: bold;
 }
 
-.date {
+aside div p + :last-child {
     text-align: right;
     font-size: 0.9rem;
 }
@@ -250,11 +270,26 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.8rem;
+    box-shadow: 0px 3px 4px 2px rgba(115,115,115,1);
 }
 
-address a:link, a:visited {
+footer address a:link {
     font-weight: bold;
     color: #d511fe;
+    text-decoration: underline;
+
+}
+
+footer address a:visited {
+    font-weight: bold;
+    color: #d511fe;
+    text-decoration: underline;
+
+}
+
+footer address a:hover {
+    font-weight: bold;
+    color: #c187cc;
     text-decoration: underline;
 
 }
